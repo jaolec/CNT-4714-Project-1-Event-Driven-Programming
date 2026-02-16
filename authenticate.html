@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CNT 4714 – Project 4 Enterprise System</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00FF00;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #00FF00;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #FFFF00;
+        }
+        h3 {
+            color: red;
+        }
+        .panel {
+            margin-top: 40px;
+        }
+        label {
+            color: #FFFFFF;
+            font-size: 1.1em;
+        }
+        input[type="text"],
+        input[type="password"] {
+            background-color: #666600;
+            border: 1px solid #CCCC00;
+            color: #FFFFFF;
+            padding: 5px;
+        }
+        .button {
+            background-color: #00CC00;
+            border: 1px solid #003300;
+            color: #000000;
+            font-weight: bold;
+            padding: 6px 16px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the Fall 2025 Project 4 Enterprise System</h1>
+    <h2>A Servlet/JSP-based Multi-tiered Enterprise Application Using A Tomcat Container</h2>
+    <h3>- User Authentication Page -</h3>
+
+    <div class="panel">
+        <form method="post" action="authenticate">
+            <p>
+                <label for="username">UserName&nbsp;&nbsp;</label>
+                <input type="text" id="username" name="username">
+            </p>
+            <p>
+                <label for="password">Password&nbsp;&nbsp;</label>
+                <input type="password" id="password" name="password">
+            </p>
+            <p>
+                <input class="button" type="submit" value="Click To Authenticate">
+                <input class="button" type="reset" value="Clear">
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>
