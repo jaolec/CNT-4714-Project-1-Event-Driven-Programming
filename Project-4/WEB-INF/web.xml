@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+        <display-name>
+            CNT 4714 Fall 2025 Project 4
+        </display-name>
+
+    <!-- When user goes to /Project-4/, show authenticate.html -->
+    <welcome-file-list>
+        <welcome-file>authenticate.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- Authentication servlet -->
+    <servlet>
+        <servlet-name>AuthenticationServlet</servlet-name>
+        <servlet-class>AuthenticationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AuthenticationServlet</servlet-name>
+        <url-pattern>/authenticate</url-pattern>
+    </servlet-mapping>
+
+    <!-- Client-level servlet -->
+    <servlet>
+        <servlet-name>ClientServlet</servlet-name>
+        <servlet-class>ClientServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ClientServlet</servlet-name>
+        <url-pattern>/client</url-pattern>
+    </servlet-mapping>
+
+<!-- Root servlet -->
+<servlet>
+    <servlet-name>RootServlet</servlet-name>
+    <servlet-class>RootServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>RootServlet</servlet-name>
+    <url-pattern>/root</url-pattern>
+</servlet-mapping>
+
+<!-- Data Entry servlet -->
+<servlet>
+    <servlet-name>DataEntryServlet</servlet-name>
+    <servlet-class>DataEntryServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DataEntryServlet</servlet-name>
+    <url-pattern>/dataentry</url-pattern>
+</servlet-mapping>
+
+<!-- Accountant servlet -->
+<servlet>
+    <servlet-name>AccountantServlet</servlet-name>
+    <servlet-class>AccountantServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AccountantServlet</servlet-name>
+    <url-pattern>/accountant</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+</web-app>
